@@ -16,7 +16,8 @@
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="{{ asset('AdminLTE-3.2.0/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
@@ -60,7 +61,7 @@
 
                     <!-- Unidades Productivas -->
                     <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link text-success">
+                           <a href="#"  class="nav-link text-dark">
                              <i class="fas fa-user"></i>&nbsp;
                             <p>
                                 Gestion Usuarios
@@ -69,7 +70,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                           <a href=""  class="nav-link text-dark">
+                           <a href="{{ route('usuarios.create') }}"  class="nav-link text-dark">
                                     <i class="nav-icon fas fa-edit"></i>
                                     <p>Ingreso</p>
                                 </a>
@@ -86,9 +87,9 @@
                     <!-- Bodega Finca -->
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link text-success">
-                            <i class="fas fa-warehouse"></i>&nbsp;
+                             <i class="fas fa-truck"></i>&nbsp;
                             <p>
-                                Bodega Finca
+                               Proveedores
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
